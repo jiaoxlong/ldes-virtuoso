@@ -1,0 +1,30 @@
+{
+    "sparql": {
+        "endpoint": "http://localhost:8890/sparql",
+    },
+    "ldes-client": {
+        "url": "https://www.marineregions.org/feed",
+        "options": {
+            "pollingInterval": 5000,
+            "representation": "Quads",
+            "emitMemberOnce": true,
+            "disableSynchronization": true
+        }
+    },
+    "prefixes": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "sh": "https://www.w3.org/ns/shacl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "ldes": "https://w3id.org/ldes#",
+        "tree": "https://w3id.org/tree#",
+        "sds": "https://w3id.org/sds#",
+        "dc": "http://purl.org/dc/terms/",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "gsp": "http://www.opengis.net/ont/geosparql#",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "mr": "http://marineregions.org/ns/ontology#",
+        "mrg": "http://marineregions.org/mrgid/",
+        "schema": "https://schema.org/"
+    }
+}

@@ -1,0 +1,27 @@
+@prefix js: <https://w3id.org/conn/js#> .
+@prefix ws: <https://w3id.org/conn/ws#> .
+@prefix : <https://w3id.org/conn#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rml: <https://w3id.org/conn/rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+
+<> owl:imports <ldes.ttl>.
+<> owl:imports <ingest.ttl>.
+
+[] a js:JsChannel;
+  :reader <ldes/reader-js>;
+  :writer <ldes/writer-js>.
+
+<ldes/reader-js> a :JsReaderChannel.
+<ldes/writer-js> a :JsWriterChannel.
+
+[] a js:LDESStream;
+  js:configPath <./config/config.json> ;
+  js:ldesOutputWriter <ldes/writer-js> .
+
+
+[] a js:Ingest;
+  js:configPath <./config/config.json>;
+  js:ldesInputStream <ldes/reader-js>.
+

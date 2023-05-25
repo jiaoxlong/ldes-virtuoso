@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  db:
+    image: tenforce/virtuoso:latest
+    environment:
+      SPARQL_UPDATE: "true"
+      DEFAULT_GRAPH: "http://www.example.com/maregraph-graph"
+      DBA_PASSWORD: "maregraph"
+    volumes:
+      - ./virtuoso:/data
+    ports:
+      - "8890:8890"

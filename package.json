@@ -1,0 +1,32 @@
+{
+  "name": "ldes-virtuoso",
+  "version": "1.0.0",
+  "description": "  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiaoxlong/ldes-virtuoso.git"
+  },
+  "keywords": [
+    "ldes",
+    "virtuoso",
+    "sparql"
+  ],
+  "author": "Jiao Long",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiaoxlong/ldes-virtuoso/issues"
+  },
+  "homepage": "https://github.com/jiaoxlong/ldes-virtuoso#readme",
+  "devDependencies": {
+    "@types/node": "^20.1.5",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@treecg/actor-init-ldes-client": "^4.0.9",
+    "@treecg/connector-types": "^1.1.9"
+  }
+}
